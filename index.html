@@ -11,23 +11,25 @@
     .container{width:100%;max-width:900px;background:var(--panel);border-radius:12px;box-shadow:0 6px 20px rgba(11,95,255,0.08);padding:30px}
     h1{text-align:center;color:#111;margin:0 0 30px 0;font-size:32px}
     .song-list{list-style:none;padding:0;margin:0}
-    .song-item{padding:12px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;transition:background 0.2s;text-decoration:none;color:inherit;cursor:pointer}
-    .song-item:hover{background:#f9fafb}
-    .song-item:last-child{border-bottom:none}
+    .song-item-wrapper{border-bottom:1px solid #e5e7eb;padding:20px 0}
+    .song-item-wrapper:last-child{border-bottom:none}
+    .song-link{text-decoration:none;color:inherit;display:flex;align-items:center;gap:12px;padding:12px;border-radius:8px;transition:background 0.2s;cursor:pointer}
+    .song-link:hover{background:#f9fafb}
     .rank{font-weight:700;color:var(--accent);min-width:28px;font-size:16px;text-align:center}
     .album-cover{width:60px;height:60px;border-radius:6px;object-fit:cover;box-shadow:0 2px 6px rgba(0,0,0,0.1);flex-shrink:0}
     .song-info{flex:1;min-width:0}
     .song-title{font-size:15px;font-weight:600;color:#111;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .song-album{font-size:12px;color:var(--muted);margin:3px 0 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .streams{font-size:13px;color:var(--accent);font-weight:600;white-space:nowrap;flex-shrink:0}
+    .description{font-size:13px;color:var(--muted);line-height:1.5;margin:12px 0 0 70px;padding:12px;background:#f9fafb;border-radius:6px}
   </style>
 </head>
 <body>
   <main class="container">
     <h1>🎤 Top 10 Kanye West Songs</h1>
     <ul class="song-list">
-      <li>
-        <a href="https://open.spotify.com/track/0DiWzAVIZtAyoC8kEuylMe" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/0DiWzAVIZtAyoC8kEuylMe" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">10</div>
           <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
           <div class="song-info">
@@ -36,9 +38,12 @@
           </div>
           <div class="streams">800M+</div>
         </a>
+        <div class="description">
+          A collaboration with Lil' Wayne featuring a catchy hook and Kanye's signature introspective lyrics. The track became a classic of the mid-2000s with its infectious beat and memorable lyrics. Its popularity stems from the perfect blend of Kanye's production and Wayne's feature, making it a staple on both hip-hop and mainstream radio.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/7qiZfU4dY1lsylvNEPhPNO" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/7qiZfU4dY1lsylvNEPhPNO" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">9</div>
           <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
           <div class="song-info">
@@ -47,9 +52,12 @@
           </div>
           <div class="streams">850M+</div>
         </a>
+        <div class="description">
+          An uplifting anthem produced by Kanye West with a sample of Soul II Soul's classic track. The song became hugely popular for its positive, uplifting message about life and happiness. Its infectious energy, combined with a classic soul sample, made it a feel-good hit that resonated across multiple generations and continues to be widely streamed.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/3qeNvl3w9fJzqSJzqXYZHK" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/3qeNvl3w9fJzqSJzqXYZHK" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">8</div>
           <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
           <div class="song-info">
@@ -58,9 +66,12 @@
           </div>
           <div class="streams">900M+</div>
         </a>
+        <div class="description">
+          Featuring Coldplay's Chris Martin on vocals, this emotional track became an iconic graduation anthem that resonated with millions of listeners. Its nostalgic production combined with Chris Martin's ethereal vocals creates a powerful emotional connection. The song's universal themes of growth, change, and moving forward made it a cultural moment that transcended hip-hop.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/5kshGSbjAeVANJwRGbMnCr" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/5kshGSbjAeVANJwRGbMnCr" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">7</div>
           <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
           <div class="song-info">
@@ -69,9 +80,12 @@
           </div>
           <div class="streams">1.1B+</div>
         </a>
+        <div class="description">
+          A masterpiece from Kanye's most critically acclaimed album, featuring a haunting violin sample and introspective lyrics about relationship struggles. The song's 4+ minute runtime showcases Kanye's artistic vision and production genius. Its popularity comes from the visceral emotional depth, innovative production, and the iconic "Imma let you finish" music video that became a cultural phenomenon.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/0R0V0MJ0iV6KXfU5nH63rG" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/0R0V0MJ0iV6KXfU5nH63rG" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">6</div>
           <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
           <div class="song-info">
@@ -80,9 +94,12 @@
           </div>
           <div class="streams">1.2B+</div>
         </a>
+        <div class="description">
+          A dense, powerful track that became synonymous with confidence and ambition. The song's hypnotic beat samples a classic soul record and features layered production that showcases Kanye's technical prowess. Its lyrics about power, success, and influence resonated with listeners globally, making it an anthem for achievement and becoming a staple in sports and motivational contexts.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/15iosKaLAc7lkJcMxLoKNx" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/15iosKaLAc7lkJcMxLoKNx" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">5</div>
           <img src="https://images.genius.com/7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v.1000x1000x1.jpg" alt="The Life of Pablo album cover" class="album-cover">
           <div class="song-info">
@@ -91,9 +108,12 @@
           </div>
           <div class="streams">1.3B+</div>
         </a>
+        <div class="description">
+          A hypnotic, minimalist track that gradually builds with electronic production and smooth vocals. The song's experimental sound pushed the boundaries of mainstream hip-hop in 2016. Its popularity stems from the innovative production, catchy melody, and the mysterious vocal delivery that became instantly recognizable. The track proved Kanye's continued relevance in modern music production.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/5aBxJ5KfIm02HqYmXFZVCg" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/5aBxJ5KfIm02HqYmXFZVCg" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">4</div>
           <img src="https://images.genius.com/5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t.1000x1000x1.jpg" alt="808s & Heartbreak album cover" class="album-cover">
           <div class="song-info">
@@ -102,9 +122,12 @@
           </div>
           <div class="streams">1.4B+</div>
         </a>
+        <div class="description">
+          An iconic track from Kanye's experimental "808s & Heartbreak" album where he embraced auto-tuned vocals as a central artistic element. The song's melancholic production combined with themes of heartbreak and loss made it deeply relatable. Its massive popularity came from pioneering a sound that influenced countless artists and defined a generation of hip-hop and R&B production.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/6Xjqe7aFcXePYx1gGrMYwP" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/6Xjqe7aFcXePYx1gGrMYwP" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">3</div>
           <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
           <div class="song-info">
@@ -113,9 +136,12 @@
           </div>
           <div class="streams">1.5B+</div>
         </a>
+        <div class="description">
+          A sprawling, multi-layered production featuring contributions from Rihanna, Kid Cudi, and numerous other artists. The track's orchestral arrangement and celebrity-filled roster made it a massive mainstream hit. Its popularity comes from the ambitious scope, infectious hook, and Kanye's ability to bring together multiple musical elements and artists into a cohesive, chart-topping masterpiece.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/6J6sSXlubJGcB3mDQrRnMu" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/6J6sSXlubJGcB3mDQrRnMu" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">2</div>
           <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
           <div class="song-info">
@@ -124,9 +150,12 @@
           </div>
           <div class="streams">1.9B+</div>
         </a>
+        <div class="description">
+          A massive commercial success featuring Jamie Foxx on vocals, this track became one of the biggest hits of the 2000s. The song's catchy hook, witty lyrics, and satirical commentary on relationships made it universally appealing. Its popularity transcended hip-hop audiences, becoming a cultural phenomenon with the iconic "She take my money!" hook becoming instantly recognizable worldwide.
+        </div>
       </li>
-      <li>
-        <a href="https://open.spotify.com/track/0RIxG6hGiJhVcIYtUbN6KY" target="_blank" rel="noopener noreferrer" class="song-item">
+      <li class="song-item-wrapper">
+        <a href="https://open.spotify.com/track/0RIxG6hGiJhVcIYtUbN6KY" target="_blank" rel="noopener noreferrer" class="song-link">
           <div class="rank">1</div>
           <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
           <div class="song-info">
@@ -135,6 +164,9 @@
           </div>
           <div class="streams">2.1B+</div>
         </a>
+        <div class="description">
+          Perhaps Kanye's most iconic and enduring track, sampling Daft Punk's "Harder, Better, Faster, Stronger." The song became a global anthem of empowerment and resilience. Its popularity stems from the instantly recognizable production, relatable lyrics about overcoming challenges, and the powerful message that resonated across all demographics. It remains one of the most streamed hip-hop songs of all time and a staple in popular culture.
+        </div>
       </li>
     </ul>
   </main>
