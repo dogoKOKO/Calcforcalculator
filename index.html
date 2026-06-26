@@ -3,126 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calcforcalculator</title>
+  <title>Top Kanye West Songs</title>
   <style>
     :root{--bg:#f6f8fb;--panel:#fff;--accent:#0b5fff;--muted:#6b7280}
     html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#eef2ff,#fefefe)}
-    .calc{width:360px;max-width:95%;background:var(--panel);border-radius:12px;box-shadow:0 6px 20px rgba(11,95,255,0.08);padding:18px}
-    .display{height:64px;background:linear-gradient(180deg,#f7f9ff,#ffffff);border-radius:8px;padding:10px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;box-sizing:border-box}
-    .expr{font-size:14px;color:var(--muted);line-height:1}
-    .value{font-size:28px;font-weight:600;margin-top:4px}
-    .pad{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
-    button{height:52px;border-radius:8px;border:0;background:#f3f4f6;font-size:18px;font-weight:600;color:#111;cursor:pointer}
-    button.op{background:#eef2ff;color:var(--accent)}
-    button.equal{grid-column:span 2;background:var(--accent);color:#fff}
-    button.clear{background:#fdecea;color:#b91c1c}
-    .small{font-size:16px}
-    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:420px){.display{height:72px}.value{font-size:24px}}
+    body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#eef2ff,#fefefe);padding:20px}
+    .container{width:100%;max-width:800px;background:var(--panel);border-radius:12px;box-shadow:0 6px 20px rgba(11,95,255,0.08);padding:30px}
+    h1{text-align:center;color:#111;margin:0 0 30px 0;font-size:32px}
+    .song-list{list-style:none;padding:0;margin:0}
+    .song-item{padding:16px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;transition:background 0.2s}
+    .song-item:hover{background:#f9fafb}
+    .song-item:last-child{border-bottom:none}
+    .rank{font-weight:700;color:var(--accent);min-width:40px;font-size:18px}
+    .song-info{flex:1;margin-left:20px}
+    .song-title{font-size:16px;font-weight:600;color:#111;margin:0}
+    .song-album{font-size:13px;color:var(--muted);margin:4px 0 0 0}
+    .streams{font-size:14px;color:var(--accent);font-weight:600}
   </style>
 </head>
 <body>
-  <main class="calc" role="application" aria-label="Calculator">
-    <div class="display" aria-live="polite">
-      <div class="expr" id="expression">&nbsp;</div>
-      <div class="value" id="result">0</div>
-    </div>
-
-    <div class="pad">
-      <button class="clear small" data-action="clear">C</button>
-      <button class="op" data-value="%">%</button>
-      <button class="op" data-value="/">÷</button>
-      <button class="op" data-value="*">×</button>
-
-      <button data-value="7">7</button>
-      <button data-value="8">8</button>
-      <button data-value="9">9</button>
-      <button class="op" data-value="-">−</button>
-
-      <button data-value="4">4</button>
-      <button data-value="5">5</button>
-      <button data-value="6">6</button>
-      <button class="op" data-value="+">+</button>
-
-      <button data-value="1">1</button>
-      <button data-value="2">2</button>
-      <button data-value="3">3</button>
-      <button class="equal" data-action="equals">=</button>
-
-      <button data-value="0" style="grid-column:span 2">0</button>
-      <button data-value=".">.</button>
-    </div>
-
-    <footer>
-      Simple calculator — keyboard supported (numbers, + - * /, Enter =, Backspace)
-    </footer>
+  <main class="container">
+    <h1>🎤 Top Kanye West Songs</h1>
+    <ul class="song-list">
+      <li class="song-item">
+        <div class="rank">1</div>
+        <div class="song-info">
+          <div class="song-title">Stronger</div>
+          <div class="song-album">Graduation (2007)</div>
+        </div>
+        <div class="streams">2.1B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">2</div>
+        <div class="song-info">
+          <div class="song-title">Gold Digger</div>
+          <div class="song-album">Late Registration (2005)</div>
+        </div>
+        <div class="streams">1.9B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">3</div>
+        <div class="song-info">
+          <div class="song-title">All of the Lights</div>
+          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+        </div>
+        <div class="streams">1.5B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">4</div>
+        <div class="song-info">
+          <div class="song-title">Heartless</div>
+          <div class="song-album">808s & Heartbreak (2008)</div>
+        </div>
+        <div class="streams">1.4B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">5</div>
+        <div class="song-info">
+          <div class="song-title">Fade</div>
+          <div class="song-album">The Life of Pablo (2016)</div>
+        </div>
+        <div class="streams">1.3B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">6</div>
+        <div class="song-info">
+          <div class="song-title">Power</div>
+          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+        </div>
+        <div class="streams">1.2B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">7</div>
+        <div class="song-info">
+          <div class="song-title">Runaway</div>
+          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+        </div>
+        <div class="streams">1.1B+</div>
+      </li>
+      <li class="song-item">
+        <div class="rank">8</div>
+        <div class="song-info">
+          <div class="song-title">Homecoming</div>
+          <div class="song-album">Graduation (2007)</div>
+        </div>
+        <div class="streams">900M+</div>
+      </li>
+    </ul>
   </main>
-
-  <script>
-    (function(){
-      const expressionEl = document.getElementById('expression');
-      const resultEl = document.getElementById('result');
-      let expr = '';
-
-      function sanitizeDisplay(s){
-        return s.replace(/\*/g,'×').replace(/\//g,'÷');
-      }
-
-      function update(){
-        expressionEl.textContent = expr || '\u00A0';
-        try{
-          const sanitized = expr.replace(/×/g,'*').replace(/÷/g,'/');
-          // avoid eval on unsafe input by restricting allowed characters
-          if(/[^0-9.+\-*/()%\s]/.test(sanitized)) throw 'bad';
-          // Replace percentage a%b -> (a/100)*b? We'll treat '%' as modulo using JS %
-          const val = Function('return ('+sanitized+')')();
-          resultEl.textContent = (typeof val === 'number' && isFinite(val)) ? val : 'Error';
-        }catch(e){
-          resultEl.textContent = expr ? 'Error' : '0';
-        }
-      }
-
-      function press(v){
-        if(v === 'clear') { expr = ''; update(); return }
-        if(v === 'equals') {
-          try{
-            const sanitized = expr.replace(/×/g,'*').replace(/÷/g,'/');
-            if(/[^0-9.+\-*/()%\s]/.test(sanitized)) throw 'bad';
-            const val = Function('return ('+sanitized+')')();
-            expr = String(val);
-            update();
-          }catch(e){ resultEl.textContent = 'Error' }
-          return
-        }
-        // normal value
-        expr += v;
-        update();
-      }
-
-      document.querySelectorAll('button').forEach(b=>{
-        b.addEventListener('click', ()=>{
-          const a = b.dataset.action;
-          const v = b.dataset.value;
-          if(a) press(a);
-          else if(v) press(v);
-        })
-      })
-
-      // Keyboard support
-      window.addEventListener('keydown', (ev)=>{
-        const k = ev.key;
-        if(k === 'Enter' || k === '='){ ev.preventDefault(); press('equals'); return }
-        if(k === 'Backspace'){ ev.preventDefault(); expr = expr.slice(0,-1); update(); return }
-        if(k === 'Escape'){ ev.preventDefault(); press('clear'); return }
-        if(/^\d$/.test(k) || ['+','-','*','/','(',')','.','%'].includes(k)){
-          ev.preventDefault(); press(k);
-        }
-      })
-
-      // initial render
-      update();
-    })();
-  </script>
 </body>
 </html>
