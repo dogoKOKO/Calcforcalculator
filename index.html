@@ -11,7 +11,7 @@
     .container{width:100%;max-width:900px;background:var(--panel);border-radius:12px;box-shadow:0 6px 20px rgba(11,95,255,0.08);padding:30px}
     h1{text-align:center;color:#111;margin:0 0 30px 0;font-size:32px}
     .song-list{list-style:none;padding:0;margin:0}
-    .song-item{padding:12px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;transition:background 0.2s}
+    .song-item{padding:12px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:12px;transition:background 0.2s;text-decoration:none;color:inherit;cursor:pointer}
     .song-item:hover{background:#f9fafb}
     .song-item:last-child{border-bottom:none}
     .rank{font-weight:700;color:var(--accent);min-width:28px;font-size:16px;text-align:center}
@@ -26,95 +26,115 @@
   <main class="container">
     <h1>🎤 Top 10 Kanye West Songs</h1>
     <ul class="song-list">
-      <li class="song-item">
-        <div class="rank">10</div>
-        <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Touch the Sky</div>
-          <div class="song-album">Late Registration (2005)</div>
-        </div>
-        <div class="streams">800M+</div>
+      <li>
+        <a href="https://open.spotify.com/track/0DiWzAVIZtAyoC8kEuylMe" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">10</div>
+          <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Touch the Sky</div>
+            <div class="song-album">Late Registration (2005)</div>
+          </div>
+          <div class="streams">800M+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">9</div>
-        <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Good Life</div>
-          <div class="song-album">Graduation (2007)</div>
-        </div>
-        <div class="streams">850M+</div>
+      <li>
+        <a href="https://open.spotify.com/track/7qiZfU4dY1lsylvNEPhPNO" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">9</div>
+          <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Good Life</div>
+            <div class="song-album">Graduation (2007)</div>
+          </div>
+          <div class="streams">850M+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">8</div>
-        <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Homecoming</div>
-          <div class="song-album">Graduation (2007)</div>
-        </div>
-        <div class="streams">900M+</div>
+      <li>
+        <a href="https://open.spotify.com/track/3qeNvl3w9fJzqSJzqXYZHK" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">8</div>
+          <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Homecoming</div>
+            <div class="song-album">Graduation (2007)</div>
+          </div>
+          <div class="streams">900M+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">7</div>
-        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Runaway</div>
-          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
-        </div>
-        <div class="streams">1.1B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/5kshGSbjAeVANJwRGbMnCr" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">7</div>
+          <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Runaway</div>
+            <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+          </div>
+          <div class="streams">1.1B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">6</div>
-        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Power</div>
-          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
-        </div>
-        <div class="streams">1.2B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/0R0V0MJ0iV6KXfU5nH63rG" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">6</div>
+          <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Power</div>
+            <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+          </div>
+          <div class="streams">1.2B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">5</div>
-        <img src="https://images.genius.com/7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v.1000x1000x1.jpg" alt="The Life of Pablo album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Fade</div>
-          <div class="song-album">The Life of Pablo (2016)</div>
-        </div>
-        <div class="streams">1.3B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/15iosKaLAc7lkJcMxLoKNx" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">5</div>
+          <img src="https://images.genius.com/7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v.1000x1000x1.jpg" alt="The Life of Pablo album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Fade</div>
+            <div class="song-album">The Life of Pablo (2016)</div>
+          </div>
+          <div class="streams">1.3B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">4</div>
-        <img src="https://images.genius.com/5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t.1000x1000x1.jpg" alt="808s & Heartbreak album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Heartless</div>
-          <div class="song-album">808s & Heartbreak (2008)</div>
-        </div>
-        <div class="streams">1.4B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/5aBxJ5KfIm02HqYmXFZVCg" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">4</div>
+          <img src="https://images.genius.com/5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t.1000x1000x1.jpg" alt="808s & Heartbreak album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Heartless</div>
+            <div class="song-album">808s & Heartbreak (2008)</div>
+          </div>
+          <div class="streams">1.4B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">3</div>
-        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">All of the Lights</div>
-          <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
-        </div>
-        <div class="streams">1.5B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/6Xjqe7aFcXePYx1gGrMYwP" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">3</div>
+          <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">All of the Lights</div>
+            <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
+          </div>
+          <div class="streams">1.5B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">2</div>
-        <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Gold Digger</div>
-          <div class="song-album">Late Registration (2005)</div>
-        </div>
-        <div class="streams">1.9B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/6J6sSXlubJGcB3mDQrRnMu" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">2</div>
+          <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Gold Digger</div>
+            <div class="song-album">Late Registration (2005)</div>
+          </div>
+          <div class="streams">1.9B+</div>
+        </a>
       </li>
-      <li class="song-item">
-        <div class="rank">1</div>
-        <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
-        <div class="song-info">
-          <div class="song-title">Stronger</div>
-          <div class="song-album">Graduation (2007)</div>
-        </div>
-        <div class="streams">2.1B+</div>
+      <li>
+        <a href="https://open.spotify.com/track/0RIxG6hGiJhVcIYtUbN6KY" target="_blank" rel="noopener noreferrer" class="song-item">
+          <div class="rank">1</div>
+          <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
+          <div class="song-info">
+            <div class="song-title">Stronger</div>
+            <div class="song-album">Graduation (2007)</div>
+          </div>
+          <div class="streams">2.1B+</div>
+        </a>
       </li>
     </ul>
   </main>
