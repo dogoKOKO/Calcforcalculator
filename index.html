@@ -11,14 +11,15 @@
     .container{width:100%;max-width:800px;background:var(--panel);border-radius:12px;box-shadow:0 6px 20px rgba(11,95,255,0.08);padding:30px}
     h1{text-align:center;color:#111;margin:0 0 30px 0;font-size:32px}
     .song-list{list-style:none;padding:0;margin:0}
-    .song-item{padding:16px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;transition:background 0.2s}
+    .song-item{padding:16px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:16px;transition:background 0.2s}
     .song-item:hover{background:#f9fafb}
     .song-item:last-child{border-bottom:none}
-    .rank{font-weight:700;color:var(--accent);min-width:40px;font-size:18px}
-    .song-info{flex:1;margin-left:20px}
+    .rank{font-weight:700;color:var(--accent);min-width:30px;font-size:18px}
+    .album-cover{width:80px;height:80px;border-radius:8px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.1);flex-shrink:0}
+    .song-info{flex:1}
     .song-title{font-size:16px;font-weight:600;color:#111;margin:0}
     .song-album{font-size:13px;color:var(--muted);margin:4px 0 0 0}
-    .streams{font-size:14px;color:var(--accent);font-weight:600}
+    .streams{font-size:14px;color:var(--accent);font-weight:600;white-space:nowrap}
   </style>
 </head>
 <body>
@@ -27,6 +28,7 @@
     <ul class="song-list">
       <li class="song-item">
         <div class="rank">1</div>
+        <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Stronger</div>
           <div class="song-album">Graduation (2007)</div>
@@ -35,6 +37,7 @@
       </li>
       <li class="song-item">
         <div class="rank">2</div>
+        <img src="https://images.genius.com/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p.1000x1000x1.jpg" alt="Late Registration album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Gold Digger</div>
           <div class="song-album">Late Registration (2005)</div>
@@ -43,6 +46,7 @@
       </li>
       <li class="song-item">
         <div class="rank">3</div>
+        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">All of the Lights</div>
           <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
@@ -51,6 +55,7 @@
       </li>
       <li class="song-item">
         <div class="rank">4</div>
+        <img src="https://images.genius.com/5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t.1000x1000x1.jpg" alt="808s & Heartbreak album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Heartless</div>
           <div class="song-album">808s & Heartbreak (2008)</div>
@@ -59,6 +64,7 @@
       </li>
       <li class="song-item">
         <div class="rank">5</div>
+        <img src="https://images.genius.com/7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v.1000x1000x1.jpg" alt="The Life of Pablo album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Fade</div>
           <div class="song-album">The Life of Pablo (2016)</div>
@@ -67,6 +73,7 @@
       </li>
       <li class="song-item">
         <div class="rank">6</div>
+        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Power</div>
           <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
@@ -75,6 +82,7 @@
       </li>
       <li class="song-item">
         <div class="rank">7</div>
+        <img src="https://images.genius.com/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r.1000x1000x1.jpg" alt="My Beautiful Dark Twisted Fantasy album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Runaway</div>
           <div class="song-album">My Beautiful Dark Twisted Fantasy (2010)</div>
@@ -83,6 +91,7 @@
       </li>
       <li class="song-item">
         <div class="rank">8</div>
+        <img src="https://images.genius.com/d76ec2d5d2c4f2e0a4a8a5c9f9e8d7c6.1000x1000x1.jpg" alt="Graduation album cover" class="album-cover">
         <div class="song-info">
           <div class="song-title">Homecoming</div>
           <div class="song-album">Graduation (2007)</div>
